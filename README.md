@@ -103,20 +103,20 @@ This repository is about the program (code) for learning data structures and alg
    - [Code Linear Search](https://github.com/elsaamundi/Data-Structures-and-Algorithms/blob/main/linearsearch.cpp) (dynamic program)
    ### Output result
    output result of the program
-     ```bash
+   ```bash
          Masukkan ukuran : 7
          Masukkan angka : 1 4 7 3 5 6 9
          Masukkan elemen yang ingin dicari: 5
          Elemen ditemukan di indeks 4.
-     ```
+   ```
    ## 7.Tree
    - [Code Tree](https://awesomeopensource.com/project/elangosundar/awesome-README-templates) (static program)
    ### Output result
    output result of the program
-     ```bash
+   ```bash
          In-order Traversal: 20 30 40 50 60 70 80
          Pre-order Traversal: 50 30 20 40 70 60 80
          Post-order Traversal: 20 40 30 60 80 70 50
-     ```
+   ```
 
 
