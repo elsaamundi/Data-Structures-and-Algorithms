@@ -1,6 +1,6 @@
 # Data Structures and Algorithms (DSA)
 This repository is about the program (code) for learning data structures and algorithms during semester 2 in college. 
-# ------------------------------------Subject-------------------------
+# Subject
    ## 1. Array 
    - [Code Array](https://github.com/elsaamundi/Data-Structures-and-Algorithms/blob/main/arrayd1.cpp ) (dynamic program)
       ### Output result
