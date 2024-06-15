@@ -1,6 +1,6 @@
 # Array Data Structures and Algorithms (DSA)
 
-This repository is about the program (code) for learning data structures and algorithms during semester 2. 
+This repository is about the program (code) for learning data structures and algorithms during semester 2 in college. 
 ## Subject
  - [Array](https://github.com/elsaamundi/Array-DSA)
  - [Struct and Pointer](https://github.com/matiassingers/awesome-readme)
