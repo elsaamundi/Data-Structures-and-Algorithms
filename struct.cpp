@@ -1,15 +1,11 @@
 #include <iostream>
-
-
 using namespace std;
-
 struct Item {
   int id;
   string name; 
   int quantity;
   float price;
 };
-
 int main() {// function untuk input dan menampilkan barang 
   Item item_brng;
 
