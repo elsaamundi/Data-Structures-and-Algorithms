@@ -1,4 +1,4 @@
-#Data Structures and Algorithms (DSA)
+# Data Structures and Algorithms (DSA)
 
 This repository is about the program (code) for learning data structures and algorithms during semester 2 in college. 
 ## Subject
