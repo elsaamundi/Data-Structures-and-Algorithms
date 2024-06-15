@@ -21,7 +21,7 @@ struct CNode {
 };
 
 // Function to insert at the front of single linked list
-void insertFront(Node*& head, int newData) {
+void insertFrontSLL(Node*& head, int newData) {
     Node* newNode = new Node;
     newNode->data = newData;
     newNode->next = head;
@@ -29,24 +29,24 @@ void insertFront(Node*& head, int newData) {
 }
 
 // Function to insert at the front of double linked list
-void insertFront(DNode*& head, int newData) {
+void insertFrontDLL(DNode*& head, int newData) {
     DNode* newNode = new DNode;
     newNode->data = newData;
-    newNode->prev = nullprev;
+    newNode->prev = NULL;  // Fixed typo here
     newNode->next = head;
-    if (head != nullptr) {
+    if (head != NULL) {
         head->prev = newNode;
     }
     head = newNode;
 }
 
 // Function to insert at the end of circular linked list
-void insertEnd(CNode*& head, int newData) {
+void insertEndCLL(CNode*& head, int newData) {
     CNode* newNode = new CNode;
     newNode->data = newData;
     newNode->next = head;
 
-    if (head == nullptr) {
+    if (head == NULL) {
         head = newNode;
         newNode->next = head;
     } else {
@@ -59,9 +59,9 @@ void insertEnd(CNode*& head, int newData) {
 }
 
 // Function to display single linked list
-void display(Node* head) {
+void displaySLL(Node* head) {
     Node* current = head;
-    while (current != nullptr) {
+    while (current != NULL) {
         cout << current->data << " ";
         current = current->next;
     }
@@ -69,9 +69,9 @@ void display(Node* head) {
 }
 
 // Function to display double linked list
-void display(DNode* head) {
+void displayDLL(DNode* head) {
     DNode* current = head;
-    while (current != nullptr) {
+    while (current != NULL) {
         cout << current->data << " ";
         current = current->next;
     }
@@ -79,7 +79,10 @@ void display(DNode* head) {
 }
 
 // Function to display circular linked list
-void display(CNode* head) {
+void displayCLL(CNode* head) {
+    if (head == NULL) {
+        return;
+    }
     CNode* current = head;
     do {
         cout << current->data << " ";
@@ -90,29 +93,28 @@ void display(CNode* head) {
 
 int main() {
     // Single Linked List
-    Node* sHead = nullptr;
-    insertFront(sHead, 10);
-    insertFront(sHead, 20);
-    insertFront(sHead, 30);
+    Node* sHead = NULL;
+    insertFrontSLL(sHead, 10);
+    insertFrontSLL(sHead, 20);
+    insertFrontSLL(sHead, 30);
     cout << "Single Linked List: ";
-    display(sHead);
+    displaySLL(sHead);
 
     // Double Linked List
-    DNode* dHead = nullptr;
-    insertFront(dHead, 10);
-    insertFront(dHead, 20);
-    insertFront(dHead, 30);
+    DNode* dHead = NULL;
+    insertFrontDLL(dHead, 10);
+    insertFrontDLL(dHead, 20);
+    insertFrontDLL(dHead, 30);
     cout << "Double Linked List: ";
-    display(dHead);
+    displayDLL(dHead);
 
     // Circular Linked List
-    CNode* cHead = nullptr;
-    insertEnd(cHead, 10);
-    insertEnd(cHead, 20);
-    insertEnd(cHead, 30);
+    CNode* cHead = NULL;
+    insertEndCLL(cHead, 10);
+    insertEndCLL(cHead, 20);
+    insertEndCLL(cHead, 30);
     cout << "Circular Linked List: ";
-    display(cHead);
+    displayCLL(cHead);
 
     return 0;
 }
-
